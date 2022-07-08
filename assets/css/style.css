@@ -194,7 +194,9 @@ footer .footer-textos p{
     color: #999999;
     margin-bottom: 45px;
 }
+
 /*  FORMULARIO  */
+
 footer .formulario{
     display: flex;
     flex-direction: column;
@@ -242,4 +244,50 @@ footer .formulario .botton-envio:hover{
     color: #ccc;
     border-radius: 6px;
     font-size: 14px;
+}
+
+/* ----------- RESPONSIVO ----------- */
+
+@media screen and (max-width:600px){
+    header .menu{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header .contenedor-textos-header{
+        margin: 100px 0;
+    }
+}
+@media screen and (max-width:540px){
+    header .contenedor-textos-header h1{
+        font-size: 60px;
+    }
+
+    header span {
+        display: none;
+    }
+    
+    .contenedor-iconos{
+        flex-direction: column;
+    }
+
+    .contenedor-iconos .icono-individual{
+        width: 90%;
+        margin: auto;
+    }
+
+    /*  GALERIA  */
+    
+    main .portafolio .contenedor-portafolio{
+        justify-content: space-around;
+    }
+    
+    main .portafolio .contenedor-portafolio img{
+        width: 49%;
+        height: 200px;
+        /* margin: auto;
+        margin-bottom: 10px;
+        border-radius: 5px; */
+    }
+    
 }
